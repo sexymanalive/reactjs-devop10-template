@@ -10,7 +10,7 @@ const HomePage = () => {
                 <div className="container pt-4   order-2 order-md-1">
                     <h1 className="display-2 header-title">
                         {" "}
-                       Earthdx Webhook Github help  planting trees 
+                       Earthdx Webhook1 Github help  planting trees 
                     </h1>
                     <p> We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
                     <div className="d-flex pt-5">
