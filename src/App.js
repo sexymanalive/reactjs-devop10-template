@@ -19,13 +19,22 @@ import AuthContext, { AuthContextProvider } from './components/shared/AuthContex
 import { GET_OWN_PROFILE } from './services/userService';
 function App() {
 
+  const username="postgres"
+  const password="345678"
+
+  const demo = ()=>{
+    let msg = "hello world "
+    console.log("Message is : ", msg)
+  }
+  const demo2 = ()=>{
+    let msg = "hello world "
+    console.log("Message is : ", msg)
+  }
   // we should check whether the token is valid or not 
   // check if the access_token is valid or not 
   const [isValidated, setIsValidated] = useState(
     localStorage.getItem("tokens") ? true : false
   )
-   
-
   
   const handleLoginCallBack = (value) => {
     setIsValidated(value) // get value from navbar 
