@@ -2,11 +2,11 @@
 # set condition for when to run the action files 
 on: 
   push: 
-    branches: ["master-non-exist"]
+    branches: ["master"]
 # build docker image , push dockerhub
 env: 
-  DOCKER_IMAGE_NAME: k8s-reactjs-dev09
-  HELM_REPO: keoKAY/first-helm-argo-repo-dev09
+  DOCKER_IMAGE_NAME: k8s-reactjs-dev10
+  HELM_REPO: sexymanalive/first-argocd-git-repo
 jobs: 
   ci-job: 
     runs-on: ubuntu-latest 
@@ -53,7 +53,7 @@ jobs:
           git clone https://github.com/${{ env.HELM_REPO }} helm_repo 
       - name: Update Helm Chart 
         run: |
-          cd helm_repo/reactjs-plants-chart
+          cd helm_repo/reactjs-helm
 
           echo "Update repository username/imagename "
 
