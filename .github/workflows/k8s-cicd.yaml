@@ -48,7 +48,7 @@ jobs:
           echo "TAG=${GITHUB_SHA::8}" >> $GITHUB_ENV
       
       # clone the helm repo remporarily 
-      - name: Clone argocd repo 
+      - name: Clone helm-repo gitops repo 
         run: | 
           git clone https://github.com/${{ env.HELM_REPO }} helm_repo 
       - name: Update Helm Chart 
